@@ -1,0 +1,266 @@
+20230219 12:57:06 WARN  [main] commontests.BaseTest BaseTest.java46 - warn
+20230219 12:57:06 FATAL [main] commontests.BaseTest BaseTest.java47 - fatal
+20230219 12:57:06 ERROR [main] commontests.BaseTest BaseTest.java49 - error
+20230219 12:58:10 INFO  [main] commontests.BaseTest BaseTest.java45 - info
+20230219 12:58:10 WARN  [main] commontests.BaseTest BaseTest.java46 - warn
+20230219 12:58:10 FATAL [main] commontests.BaseTest BaseTest.java47 - fatal
+20230219 12:58:10 ERROR [main] commontests.BaseTest BaseTest.java49 - error
+20230219 12:58:10 INFO  [main] commontests.BaseTest BaseTest.java58 - Creating driver
+20230219 12:58:13 INFO  [main] commontests.BaseTest BaseTest.java63 - driver created
+20230219 12:58:17 INFO  [main] commontests.BaseTest BaseTest.java102 - Login started
+20230219 12:58:27 INFO  [main] commontests.Contacts Contacts.java100 - Running recentContacts
+20230219 12:58:30 INFO  [main] commontests.Contacts Contacts.java105 - 26
+20230219 12:58:30 INFO  [main] commontests.BaseTest BaseTest.java164 - Taking Screenshot
+20230219 12:58:30 INFO  [main] commontests.BaseTest BaseTest.java165 - ChromeDriver: chrome on WINDOWS (c70c3b01c2d3c4fa8d48b34a3ed9a7d6)
+20230219 13:00:13 INFO  [main] commontests.BaseTest BaseTest.java45 - info
+20230219 13:00:13 WARN  [main] commontests.BaseTest BaseTest.java46 - warn
+20230219 13:00:13 FATAL [main] commontests.BaseTest BaseTest.java47 - fatal
+20230219 13:00:13 DEBUG [main] commontests.BaseTest BaseTest.java48 - debug
+20230219 13:00:13 ERROR [main] commontests.BaseTest BaseTest.java49 - error
+20230219 13:00:13 INFO  [main] commontests.BaseTest BaseTest.java58 - Creating driver
+20230219 13:00:16 INFO  [main] commontests.BaseTest BaseTest.java63 - driver created
+20230219 13:00:20 INFO  [main] commontests.BaseTest BaseTest.java102 - Login started
+20230219 13:00:32 INFO  [main] commontests.Contacts Contacts.java100 - Running recentContacts
+20230219 13:00:35 INFO  [main] commontests.Contacts Contacts.java105 - 26
+20230219 13:00:35 INFO  [main] commontests.BaseTest BaseTest.java164 - Taking Screenshot
+20230219 13:00:35 INFO  [main] commontests.BaseTest BaseTest.java165 - ChromeDriver: chrome on WINDOWS (ea84f993ac2acc21cbe751454a3bdc96)
+20230219 14:03:53 INFO  [main] commontests.BaseTest BaseTest.java43 - Start the test
+20230219 14:03:53 INFO  [main] commontests.BaseTest BaseTest.java49 - Creating driver
+20230219 14:03:53 INFO  [main] commontests.BaseTest BaseTest.java68 - Creating Chrome
+20230219 14:03:55 INFO  [main] commontests.BaseTest BaseTest.java61 - driver created
+20230219 14:03:59 INFO  [main] commontests.BaseTest BaseTest.java118 - Login started
+20230219 14:04:02 INFO  [main] commontests.Leads Leads.java46 - Running checkLeadsTab
+20230219 14:04:02 INFO  [main] commontests.Leads Leads.java32 - Running openLeads
+20230219 14:04:08 INFO  [main] commontests.BaseTest BaseTest.java179 - Taking Screenshot
+20230219 14:04:08 INFO  [main] commontests.BaseTest BaseTest.java49 - Creating driver
+20230219 14:04:08 INFO  [main] commontests.BaseTest BaseTest.java68 - Creating Chrome
+20230219 14:04:10 INFO  [main] commontests.BaseTest BaseTest.java61 - driver created
+20230219 14:04:14 INFO  [main] commontests.BaseTest BaseTest.java118 - Login started
+20230219 14:04:16 INFO  [main] commontests.Leads Leads.java72 - Running goButton
+20230219 14:04:16 INFO  [main] commontests.Leads Leads.java32 - Running openLeads
+20230219 14:04:33 INFO  [main] commontests.BaseTest BaseTest.java108 - Loging out application
+20230219 14:04:47 INFO  [main] commontests.Leads Leads.java32 - Running openLeads
+20230219 14:04:54 INFO  [main] commontests.BaseTest BaseTest.java179 - Taking Screenshot
+20230219 14:04:54 INFO  [main] commontests.BaseTest BaseTest.java49 - Creating driver
+20230219 14:04:54 INFO  [main] commontests.BaseTest BaseTest.java68 - Creating Chrome
+20230219 14:04:56 INFO  [main] commontests.BaseTest BaseTest.java61 - driver created
+20230219 14:05:00 INFO  [main] commontests.BaseTest BaseTest.java118 - Login started
+20230219 14:05:02 INFO  [main] commontests.Leads Leads.java113 - Running newLeads
+20230219 14:05:02 INFO  [main] commontests.Leads Leads.java32 - Running openLeads
+20230219 14:05:16 INFO  [main] commontests.BaseTest BaseTest.java179 - Taking Screenshot
+20230219 14:05:17 INFO  [main] commontests.BaseTest BaseTest.java49 - Creating driver
+20230219 14:05:17 INFO  [main] commontests.BaseTest BaseTest.java68 - Creating Chrome
+20230219 14:05:19 INFO  [main] commontests.BaseTest BaseTest.java61 - driver created
+20230219 14:05:23 INFO  [main] commontests.BaseTest BaseTest.java118 - Login started
+20230219 14:05:24 INFO  [main] commontests.Leads Leads.java100 - Running todaysLeadsWork
+20230219 14:05:24 INFO  [main] commontests.Leads Leads.java32 - Running openLeads
+20230219 14:05:32 INFO  [main] commontests.BaseTest BaseTest.java179 - Taking Screenshot
+20230219 14:05:33 INFO  [main] commontests.BaseTest BaseTest.java49 - Creating driver
+20230219 14:05:33 INFO  [main] commontests.BaseTest BaseTest.java68 - Creating Chrome
+20230219 14:05:35 INFO  [main] commontests.BaseTest BaseTest.java61 - driver created
+20230219 14:05:39 INFO  [main] commontests.BaseTest BaseTest.java118 - Login started
+20230219 14:05:41 INFO  [main] commontests.Leads Leads.java54 - Running validateViewDropDownList
+20230219 14:05:41 INFO  [main] commontests.Leads Leads.java32 - Running openLeads
+20230219 14:05:47 INFO  [main] commontests.BaseTest BaseTest.java179 - Taking Screenshot
+20230219 15:07:33 INFO  [main] commontests.BaseTest BaseTest.java44 - Start the test
+20230219 15:09:15 INFO  [main] commontests.BaseTest BaseTest.java44 - Start the test
+20230219 15:09:15 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:09:15 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:09:19 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:09:23 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:09:26 INFO  [main] commontests.Contacts Contacts.java136 - Running viewContacts
+20230219 15:09:26 INFO  [main] commontests.Contacts Contacts.java36 - Running openContacts
+20230219 15:09:40 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:16:40 INFO  [main] commontests.BaseTest BaseTest.java44 - Start the test
+20230219 15:16:40 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:16:40 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:16:44 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:16:48 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:16:50 INFO  [main] commontests.Contacts Contacts.java170 - Running checkCancelButton
+20230219 15:16:50 INFO  [main] commontests.Contacts Contacts.java48 - Running createNewViewAssertion
+20230219 15:16:50 INFO  [main] commontests.Contacts Contacts.java36 - Running openContacts
+20230219 15:17:12 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:17:13 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:17:13 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:17:16 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:17:20 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:17:23 INFO  [main] commontests.Contacts Contacts.java186 - Running checksaveAndButton
+20230219 15:17:23 INFO  [main] commontests.Contacts Contacts.java36 - Running openContacts
+20230219 15:17:35 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:17:35 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:17:35 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:17:38 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:17:42 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:17:44 INFO  [main] commontests.Contacts Contacts.java60 - Running createNewContact
+20230219 15:17:44 INFO  [main] commontests.Contacts Contacts.java36 - Running openContacts
+20230219 15:18:06 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:18:07 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:18:07 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:18:10 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:18:14 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:18:16 INFO  [main] commontests.Contacts Contacts.java152 - Running errorMessageInNewView
+20230219 15:18:16 INFO  [main] commontests.Contacts Contacts.java48 - Running createNewViewAssertion
+20230219 15:18:16 INFO  [main] commontests.Contacts Contacts.java36 - Running openContacts
+20230219 15:18:36 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:18:37 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:18:37 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:18:39 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:18:43 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:18:45 INFO  [main] commontests.Contacts Contacts.java121 - Running myContactsView
+20230219 15:18:45 INFO  [main] commontests.Contacts Contacts.java36 - Running openContacts
+20230219 15:18:58 INFO  [main] commontests.Contacts Contacts.java129 - 26
+20230219 15:18:58 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:18:59 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:18:59 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:19:01 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:19:06 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:19:08 INFO  [main] commontests.Contacts Contacts.java84 - Running newViewConactPage
+20230219 15:19:08 INFO  [main] commontests.Contacts Contacts.java48 - Running createNewViewAssertion
+20230219 15:19:08 INFO  [main] commontests.Contacts Contacts.java36 - Running openContacts
+20230219 15:19:29 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:19:30 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:19:30 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:19:32 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:19:36 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:19:39 INFO  [main] commontests.Contacts Contacts.java104 - Running recentContacts
+20230219 15:19:39 INFO  [main] commontests.Contacts Contacts.java36 - Running openContacts
+20230219 15:19:48 INFO  [main] commontests.Contacts Contacts.java108 - Running recentContacts
+20230219 15:19:51 INFO  [main] commontests.Contacts Contacts.java113 - 26
+20230219 15:19:51 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:19:52 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:19:52 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:19:55 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:19:59 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:20:01 INFO  [main] commontests.Contacts Contacts.java136 - Running viewContacts
+20230219 15:20:01 INFO  [main] commontests.Contacts Contacts.java36 - Running openContacts
+20230219 15:20:13 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:20:14 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:20:14 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:20:16 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:20:20 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:20:23 INFO  [main] commontests.CreateAccount CreateAccount.java41 - Running openContacts
+20230219 15:20:50 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:20:50 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:20:50 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:20:53 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:20:57 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:20:59 INFO  [main] commontests.CreateAccount CreateAccount.java142 - Running createAccountReport
+20230219 15:21:22 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:21:23 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:21:23 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:21:26 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:21:30 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:21:33 INFO  [main] commontests.CreateAccount CreateAccount.java66 - Running createView
+20230219 15:21:50 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:21:51 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:21:51 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:21:53 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:21:57 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:22:00 INFO  [main] commontests.CreateAccount CreateAccount.java87 - Running editView
+20230219 15:22:27 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:22:28 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:22:28 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:22:32 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:22:36 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:22:38 INFO  [main] commontests.CreateAccount CreateAccount.java118 - Running mergeAccounts
+20230219 15:22:48 INFO  [main] commontests.CreateAccount CreateAccount.java41 - Running openContacts
+20230219 15:23:24 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:23:27 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:23:27 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:23:29 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:23:33 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:23:36 INFO  [main] commontests.CreateOpty CreateOpty.java69 - Running create_A_new_opty
+20230219 15:23:57 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:23:57 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:23:57 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:24:00 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:24:04 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:24:07 INFO  [main] commontests.CreateOpty CreateOpty.java93 - Running oppPipelineReport
+20230219 15:24:20 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:24:21 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:24:21 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:24:24 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:24:28 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:24:30 INFO  [main] commontests.CreateOpty CreateOpty.java54 - Running opportunitiesDropDown
+20230219 15:24:40 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:24:41 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:24:41 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:24:44 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:24:48 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:24:53 INFO  [main] commontests.CreateOpty CreateOpty.java112 - Running testQuarterlySummaryReport
+20230219 15:25:08 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:25:09 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:25:09 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:25:12 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:25:16 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:25:18 INFO  [main] commontests.CreateOpty CreateOpty.java103 - Running test_stuck_opportunities_report
+20230219 15:25:29 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:25:30 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:25:30 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:25:32 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:25:36 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:25:39 INFO  [main] commontests.Leads Leads.java46 - Running checkLeadsTab
+20230219 15:25:39 INFO  [main] commontests.Leads Leads.java32 - Running openLeads
+20230219 15:25:46 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:25:47 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:25:47 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:25:49 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:25:53 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:26:00 INFO  [main] commontests.Leads Leads.java72 - Running goButton
+20230219 15:26:00 INFO  [main] commontests.Leads Leads.java32 - Running openLeads
+20230219 15:26:12 INFO  [main] commontests.BaseTest BaseTest.java107 - Loging out application
+20230219 15:26:25 INFO  [main] commontests.Leads Leads.java32 - Running openLeads
+20230219 15:26:33 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:26:34 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:26:34 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:26:36 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:26:40 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:26:46 INFO  [main] commontests.Leads Leads.java113 - Running newLeads
+20230219 15:26:46 INFO  [main] commontests.Leads Leads.java32 - Running openLeads
+20230219 15:26:59 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:27:00 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:27:00 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:27:03 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:27:07 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:27:09 INFO  [main] commontests.Leads Leads.java100 - Running todaysLeadsWork
+20230219 15:27:09 INFO  [main] commontests.Leads Leads.java32 - Running openLeads
+20230219 15:27:17 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:27:18 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:27:18 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:27:20 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:27:24 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:27:27 INFO  [main] commontests.Leads Leads.java54 - Running validateViewDropDownList
+20230219 15:27:27 INFO  [main] commontests.Leads Leads.java32 - Running openLeads
+20230219 15:27:34 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:27:35 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:27:35 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:27:37 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:27:41 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:28:19 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:28:20 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:28:20 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:28:23 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:28:27 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:29:18 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:29:19 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:29:19 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:29:22 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:29:26 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:29:35 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:29:37 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:29:37 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:29:39 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:29:43 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:30:05 INFO  [main] commontests.BaseTest BaseTest.java107 - Loging out application
+20230219 15:30:34 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:30:35 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:30:35 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:30:38 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:30:42 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:30:59 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:31:00 INFO  [main] commontests.BaseTest BaseTest.java50 - Creating driver
+20230219 15:31:00 INFO  [main] commontests.BaseTest BaseTest.java69 - Creating Chrome
+20230219 15:31:04 INFO  [main] commontests.BaseTest BaseTest.java62 - driver created
+20230219 15:31:08 INFO  [main] commontests.BaseTest BaseTest.java117 - Login started
+20230219 15:31:19 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot
+20230219 15:31:20 INFO  [main] commontests.BaseTest BaseTest.java178 - Taking Screenshot

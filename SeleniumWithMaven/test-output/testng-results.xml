@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+<testng-results ignored="7" total="8" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-14T21:55:50 PST" name="Default suite" finished-at="2023-02-14T21:56:47 PST" duration-ms="57182">
+  <suite started-at="2023-02-19T15:09:13 PST" name="Default suite" finished-at="2023-02-19T15:09:41 PST" duration-ms="27972">
     <groups>
     </groups>
-    <test started-at="2023-02-14T21:55:50 PST" name="Default test" finished-at="2023-02-14T21:56:47 PST" duration-ms="57182">
-      <class name="com.jan23.commontests.Randomscenarios">
-        <test-method is-config="true" signature="lunch()[pri:0, instance:com.jan23.commontests.Randomscenarios@3ce1e309]" started-at="2023-02-14T21:55:50 PST" name="lunch" finished-at="2023-02-14T21:56:00 PST" duration-ms="9335" status="PASS">
+    <test started-at="2023-02-19T15:09:13 PST" name="Default test" finished-at="2023-02-19T15:09:41 PST" duration-ms="27972">
+      <class name="com.jan23.commontests.Contacts">
+        <test-method is-config="true" signature="setUpBeforeTest()[pri:0, instance:com.jan23.commontests.Contacts@158d2680]" started-at="2023-02-19T15:09:14 PST" name="setUpBeforeTest" finished-at="2023-02-19T15:09:15 PST" duration-ms="1060" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeTest -->
+        <test-method is-config="true" signature="lunch()[pri:0, instance:com.jan23.commontests.Contacts@158d2680]" started-at="2023-02-19T15:09:15 PST" name="lunch" finished-at="2023-02-19T15:09:26 PST" duration-ms="10806" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lunch -->
-        <test-method signature="blockingCalEventWeekly()[pri:0, instance:com.jan23.commontests.Randomscenarios@3ce1e309]" started-at="2023-02-14T21:56:00 PST" name="blockingCalEventWeekly" finished-at="2023-02-14T21:56:47 PST" duration-ms="47786" status="PASS">
+        <test-method signature="viewContacts()[pri:0, instance:com.jan23.commontests.Contacts@158d2680]" started-at="2023-02-19T15:09:26 PST" name="viewContacts" finished-at="2023-02-19T15:09:40 PST" duration-ms="14377" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- blockingCalEventWeekly -->
-      </class> <!-- com.jan23.commontests.Randomscenarios -->
+        </test-method> <!-- viewContacts -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.jan23.commontests.Contacts@158d2680]" started-at="2023-02-19T15:09:40 PST" name="close" finished-at="2023-02-19T15:09:41 PST" duration-ms="697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="teardownAfterTest()[pri:0, instance:com.jan23.commontests.Contacts@158d2680]" started-at="2023-02-19T15:09:41 PST" name="teardownAfterTest" finished-at="2023-02-19T15:09:41 PST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownAfterTest -->
+      </class> <!-- com.jan23.commontests.Contacts -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

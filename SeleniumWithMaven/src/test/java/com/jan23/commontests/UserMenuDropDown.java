@@ -2,6 +2,8 @@ package com.jan23.commontests;
 
 import java.awt.AWTException;
 import java.awt.Robot;
+import java.io.IOException;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -26,12 +28,17 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class UserMenuDropDown extends BaseTest{
-	
 	@BeforeMethod
-	public void lunch() throws InterruptedException
-	{
+	public void lunch(Method method) throws InterruptedException, IOException
+	{ 
+		//extentreport.startsingleTestReport("testcase name");
+		
+		logger.info("started test case name:" + method.getName());
+		//extentreport.logTestInfo("Started TestCase " + method.getName());
 		login();
 	}
+	
+
 	@AfterMethod
 	public void close()
 	{
@@ -320,7 +327,7 @@ public class UserMenuDropDown extends BaseTest{
 
 	@Test
 	
-	public static void logout() throws InterruptedException
+	public static void salesforcelogout() throws InterruptedException
 	{
 		//test case 7.1
 		logout();

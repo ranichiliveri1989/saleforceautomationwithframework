@@ -1,5 +1,6 @@
 package com.jan23.commontests;
 
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
@@ -9,12 +10,14 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners(com.jan23.utility.MyTestNgListners.class)
 public class Leads extends BaseTest{
 	
 	@BeforeMethod
-	public void lunch() throws InterruptedException
+	public void lunch() throws InterruptedException, IOException
 	{
 		login();
 	}
@@ -26,6 +29,8 @@ public class Leads extends BaseTest{
 	}
 	public static void openLeads() throws InterruptedException
 	{
+		logger.info("Running openLeads");
+
 		click("//*[@id=\"Lead_Tab\"]/a");
 		waiting();
 		popup();
@@ -33,18 +38,21 @@ public class Leads extends BaseTest{
 		String pageDesc=getText("//h2[@class=\"pageDescription\"]");
 		Assert.assertEquals(pageType, "Leads");
 		Assert.assertEquals(pageDesc, "Home");
-		
 	}
 	
 	@Test
 	public static void checkLeadsTab() throws InterruptedException
 	{
+		logger.info("Running checkLeadsTab");
+
 		openLeads();
 	}
 	
 	@Test
-	public static void validateViewDropDownList() throws InterruptedException
+	public static void validateViewDropDownList() throws InterruptedException, IOException
 	{
+		logger.info("Running validateViewDropDownList");
+
 		openLeads();
 		Select viewdrop=new Select(driver.findElement(By.xpath("//*[@name=\"fcf\"]")));
 		List<WebElement> viewdropElements=viewdrop.getOptions();
@@ -55,12 +63,13 @@ public class Leads extends BaseTest{
 	    	Assert.assertTrue(expected_items.contains(wp.getText())); 
 	    }
 		
-		
+		getScreenshots();
 		
 	}
 	@Test
 	public static void goButton() throws InterruptedException
 	{
+		logger.info("Running goButton");
 		openLeads();
     	Select leadsDropdown=new Select(driver.findElement(By.xpath("//*[@name=\"fcf\"]")));
     	leadsDropdown.selectByVisibleText("Today's Leads");
@@ -88,6 +97,7 @@ public class Leads extends BaseTest{
     @Test
 	public static void todaysLeadsWork() throws InterruptedException
 	{
+    	logger.info("Running todaysLeadsWork");
 		openLeads();
     	Select leadsDropdown=new Select(driver.findElement(By.xpath("//*[@id=\"fcf\"]")));
     	String updated_dropdown = "Today's Leads";
@@ -100,6 +110,7 @@ public class Leads extends BaseTest{
     @Test
 	public static void newLeads() throws InterruptedException
 	{
+    	logger.info("Running newLeads");
 		openLeads();
 		click("//input[@name=\"new\"]");
 		waiting();

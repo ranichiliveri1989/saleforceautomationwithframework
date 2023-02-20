@@ -1,5 +1,6 @@
 package com.jan23.commontests;
 
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.List;
@@ -10,19 +11,24 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners(com.jan23.utility.MyTestNgListners.class)
 public class CreateOpty extends BaseTest {
+	
 	@BeforeMethod
-	public void lunch() throws InterruptedException
+	public void lunch() throws InterruptedException, IOException
 	{
 		login();
 	}
+	
 	@AfterMethod
 	public void close()
 	{
 		driver.close();
 	}
+	
 	public static void verifyReports(String report_type) {
 		String page_title = getText("//h1[@class=\"noSecondHeader pageType\"]");
     	Assert.assertEquals(page_title, report_type);
@@ -45,7 +51,7 @@ public class CreateOpty extends BaseTest {
 	@Test
     public void opportunitiesDropDown() throws InterruptedException
     {
-    	
+		logger.info("Running opportunitiesDropDown");
 		opppagevalidation();
     	Select oppDropdown=new Select(driver.findElement(By.xpath("//*[@id=\"fcf\"]")));
     	List<WebElement> oppDropdown2= oppDropdown.getOptions();
@@ -60,6 +66,7 @@ public class CreateOpty extends BaseTest {
 	@Test
 	public static void create_A_new_opty() throws InterruptedException
 	{
+		logger.info("Running create_A_new_opty");
 		opppagevalidation();
 		click("//input[@title=\"New\"]");
 		String opp_name = "Rani1";
@@ -79,39 +86,38 @@ public class CreateOpty extends BaseTest {
 		String act_opp_name = getText("//h2[@class=\"pageDescription\"]");
 		Assert.assertEquals(act_opp_name, opp_name);
 	}
+	
     @Test
 	public static void oppPipelineReport() throws InterruptedException
 	{
+    	logger.info("Running oppPipelineReport");
 		opppagevalidation();
 		click("//*[@id=\"toolsContent\"]/tbody/tr/td[1]/div/div[1]/div[1]/ul/li[1]/a");
 	    waiting();
 		verifyReports("Opportunity Pipeline");
-		
 	}
+    
     @Test
     public static void test_stuck_opportunities_report() throws InterruptedException 
     {
+    	logger.info("Running test_stuck_opportunities_report");
     	opppagevalidation();
     	click("//*[@id=\"toolsContent\"]/tbody/tr/td[1]/div/div[1]/div[1]/ul/li[2]/a");
 		verifyReports("Stuck Opportunities");
-
-		
     }
+    
     @Test
 	public static void testQuarterlySummaryReport() throws InterruptedException
 	{
+    	logger.info("Running testQuarterlySummaryReport");
 		opppagevalidation();
 		waiting();
-		System.out.println("so far done");
 		Select interval=new Select(driver.findElement(By.xpath("//*[@id=\"quarter_q\"]")));
-		System.out.println("so far done1");
-
 		interval.selectByVisibleText("Current FQ");
 		Select include=new Select(driver.findElement(By.xpath("//*[@id=\"open\"]")));
 		include.selectByVisibleText("Open Opportunities");
 		click("//input[@value=\"Run Report\"]");
 		waiting();
 		verifyReports("Opportunity Report");
-
 	}
 }

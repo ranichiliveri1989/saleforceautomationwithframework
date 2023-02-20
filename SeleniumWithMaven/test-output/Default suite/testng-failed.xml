@@ -3,12 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.jan23.commontests.Randomscenarios">
+      <class name="com.jan23.commontests.Contacts">
         <methods>
+          <include name="teardownAfterTest"/>
           <include name="lunch"/>
-          <include name="blockingCalEventWeekly"/>
+          <include name="viewContacts"/>
+          <include name="setUpBeforeTest"/>
+          <include name="close"/>
         </methods>
-      </class> <!-- com.jan23.commontests.Randomscenarios -->
+      </class> <!-- com.jan23.commontests.Contacts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

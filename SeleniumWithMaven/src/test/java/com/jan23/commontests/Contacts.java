@@ -1,5 +1,7 @@
 package com.jan23.commontests;
+ 
 
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.List;
 
@@ -9,12 +11,16 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+
+@Listeners(com.jan23.utility.MyTestNgListners.class)
 public class Contacts extends BaseTest{
 	
+	
 	@BeforeMethod
-	public void lunch() throws InterruptedException
+	public void lunch() throws InterruptedException, IOException
 	{
 		login();
 	}
@@ -27,6 +33,7 @@ public class Contacts extends BaseTest{
 	
 	public static void openContacts() throws InterruptedException
 	{
+		logger.info("Running openContacts");
 		click("//*[@id=\"Contact_Tab\"]/a");
 		waiting();
 		popup();
@@ -38,6 +45,8 @@ public class Contacts extends BaseTest{
 	}
 	public static void createNewViewAssertion() throws InterruptedException
 	{
+		logger.info("Running createNewViewAssertion");
+
 		openContacts();
 		click("//span[@class=\"fFooter\"]/a[2]");
 		waiting();
@@ -48,6 +57,8 @@ public class Contacts extends BaseTest{
 	}
 	@Test
 	public static void createNewContact() throws InterruptedException {
+		logger.info("Running createNewContact");
+
 		openContacts();
 		click("//td[@class=\"pbButton\"]/input");
 		waiting();
@@ -70,7 +81,8 @@ public class Contacts extends BaseTest{
 	@Test
 	public static void newViewConactPage() throws InterruptedException
 	{
-		
+		logger.info("Running newViewConactPage");
+
 		createNewViewAssertion();
 		String timeStamp = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(new java.util.Date());
 		String viewName="konyala"+timeStamp;
@@ -89,13 +101,16 @@ public class Contacts extends BaseTest{
 	@Test
 	public static void recentContacts() throws InterruptedException
 	{
+		logger.info("Running recentContacts");
+
 		openContacts();
 		waiting();
+		logger.info("Running recentContacts");
 		Select recent=new Select(driver.findElement(By.xpath("//select[@id=\"hotlist_mode\"]")));
 		recent.selectByVisibleText("Recently Created");
 		waiting();
 		List<WebElement> table_data = driver.findElements(By.xpath("//*[@id=\"bodyCell\"]/div[3]/div[1]/div/div[2]/table/tbody/tr"));
-	     System.out.println(table_data.size());
+		logger.info(table_data.size());
 		Assert.assertTrue(table_data.size() > 0);
 
 		
@@ -103,19 +118,22 @@ public class Contacts extends BaseTest{
 	@Test
 	public static void myContactsView() throws InterruptedException
 	{
+		logger.info("Running myContactsView");
+
 		openContacts();
 		waiting();
 		Select recent=new Select(driver.findElement(By.xpath("//select[@id=\"fcf\"]")));
 		recent.selectByVisibleText("My Contacts");
 		waiting();
 		List<WebElement> table_data = driver.findElements(By.xpath("//*[@id=\"bodyCell\"]/div[3]/div[1]/div/div[2]/table/tbody/tr"));
-	     System.out.println(table_data.size());
+	     logger.info(table_data.size());
 		Assert.assertTrue(table_data.size() > 0);
 		
 	}
 	@Test
 	public static void viewContacts() throws InterruptedException
 	{
+		logger.info("Running viewContacts");
 		openContacts();
 		Select recent=new Select(driver.findElement(By.xpath("//select[@id=\"fcf\"]")));
 		recent.selectByVisibleText("My Contacts");
@@ -131,6 +149,8 @@ public class Contacts extends BaseTest{
 	@Test
 	public static void errorMessageInNewView() throws InterruptedException
 	{
+		logger.info("Running errorMessageInNewView");
+
 		createNewViewAssertion();
 		
 		String viewUniqueName="EFGH";
@@ -147,6 +167,8 @@ public class Contacts extends BaseTest{
 	@Test
 	public static void checkCancelButton() throws InterruptedException
 	{
+		logger.info("Running checkCancelButton");
+
 		createNewViewAssertion();
 		String viewName="ABCD";
 		String viewUniqueName="EFGH";
@@ -161,6 +183,8 @@ public class Contacts extends BaseTest{
 	@Test
 	public static void checksaveAndButton() throws InterruptedException
 	{
+		logger.info("Running checksaveAndButton");
+
 		openContacts();
 		click("//td[@class=\"pbButton\"]/input");
 		waiting();

@@ -2,6 +2,7 @@ package com.jan23.commontests;
 
 //import java.sql.Date;
 import java.util.Date;
+import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
@@ -22,7 +23,7 @@ import org.testng.annotations.Test;
 public class Randomscenarios extends BaseTest{
 	
 	@BeforeMethod
-	public void lunch() throws InterruptedException
+	public void lunch() throws InterruptedException, IOException
 	{
 		login();
 	}
@@ -32,41 +33,14 @@ public class Randomscenarios extends BaseTest{
 	{
 		driver.close();
 	}
+	
 	public static void openHome() throws InterruptedException
 	{
 		click("//li[@id=\"home_Tab\"]");
 		waiting();
 		popup();
 	}
-	@Test
-	public static void verifyMenuItems(String tabName, String add_or_remove) {
-        List<WebElement> tabbars = driver.findElements(By.xpath("//*[@id=\"tabBar\"]/li"));
-        List<String> tabItems = new ArrayList<String>();
-        for (WebElement tabbar : tabbars)
-        {
-        	tabItems.add(tabbar.getText());
-        }
-        if (add_or_remove.equals("add")) {
-        	Assert.assertTrue(tabItems.contains(tabName));
-        }
-        else
-        {
-        	Assert.assertFalse(tabItems.contains(tabName));
-        }
-
-	}
-	@Test
 	
-	public static void openAlltab() throws InterruptedException
-	{
-		click("//li[@id=\"AllTab_Tab\"]");
-		waiting();
-		popup();
-		String actual_all_tabs = getText("//h1[@class=\"noSecondHeader pageType\"]");
-		String exp_all_tabs = "All Tabs";
-		Assert.assertEquals(actual_all_tabs, exp_all_tabs);
-
-	}
 	public static void addRemoveCustTab(String tabname, String add_or_remove) throws InterruptedException {
 		click("//input[@value=\"Customize My Tabs\"]");
 		waiting();
@@ -99,6 +73,35 @@ public class Randomscenarios extends BaseTest{
         verifyMenuItems(tabname, add_or_remove);
 	
 	}
+	
+	@Test
+	public static void verifyMenuItems(String tabName, String add_or_remove) {
+        List<WebElement> tabbars = driver.findElements(By.xpath("//*[@id=\"tabBar\"]/li"));
+        List<String> tabItems = new ArrayList<String>();
+        for (WebElement tabbar : tabbars)
+        {
+        	tabItems.add(tabbar.getText());
+        }
+        if (add_or_remove.equals("add")) {
+        	Assert.assertTrue(tabItems.contains(tabName));
+        }
+        else
+        {
+        	Assert.assertFalse(tabItems.contains(tabName));
+        }
+	}
+	
+	@Test
+	public static void openAlltab() throws InterruptedException
+	{
+		click("//li[@id=\"AllTab_Tab\"]");
+		waiting();
+		popup();
+		String actual_all_tabs = getText("//h1[@class=\"noSecondHeader pageType\"]");
+		String exp_all_tabs = "All Tabs";
+		Assert.assertEquals(actual_all_tabs, exp_all_tabs);
+	}
+	
 	@Test
 	public static void verifyFAndLName() throws InterruptedException {
 		openHome();
@@ -111,15 +114,14 @@ public class Randomscenarios extends BaseTest{
 		String profile_name = getText("//*[@id=\"tailBreadcrumbNode\"]");
 		Assert.assertTrue(curr_url.contains("UserProfilePage"));
 	}
+	
    @Test
 	public static void verifyEditedLName() throws InterruptedException {
 		openHome();
 		click("//h1[@class=\"currentStatusUserName\"]/a");
         click("//img[@title=\"Edit Profile\"]/parent::a");
-
 		WebElement contactFrame=driver.findElement(By.id("contactInfoContentId"));
 		driver.switchTo().frame(contactFrame);
-		
 		String expectedMenuName = "Edit Profile";
 		String actualmenuName = getText("//h2[@id=\"contactInfoTitle\"]");
 		Assert.assertEquals(actualmenuName, expectedMenuName);
@@ -136,8 +138,8 @@ public class Randomscenarios extends BaseTest{
 		String name = getText(uname_xpath);
 		String exp_name = "Rani chiliveri";
 		Assert.assertEquals(name,exp_name);
-		
 	}
+   
 	@Test
 	public static void tabCustomization() throws InterruptedException {
 		openAlltab();
@@ -146,21 +148,17 @@ public class Randomscenarios extends BaseTest{
         waiting();
 		WebElement uname=driver.findElement(By.xpath("//input[@id='username']"));
 		uname.sendKeys("rani.ch@adcd.com");
-	  
 		WebElement password=driver.findElement(By.xpath("//input[@id='password']"));
 		password.sendKeys("rani@12345");
-	  
 		WebElement login=driver.findElement(By.xpath("//*[@id='Login']"));
 		login.click(); 
         waiting();
-
 		verifyMenuItems("Subscriptions", "remove");
 		openAlltab();
 		addRemoveCustTab("Subscriptions", "add");
-
 	}
-	@Test
 	
+	@Test
 	public static void blockingCalEvent() throws InterruptedException {
 		openHome();
 		waiting();
@@ -182,7 +180,6 @@ public class Randomscenarios extends BaseTest{
 	      String[] getWindow = wid.toArray(new String[wid.size()]);
 	      //switch to active tab
 	      Thread.sleep(3000);
-
 	      driver.switchTo().window(getWindow[1]);
 	      driver.manage().window().maximize();
 	      String newText=getText("//li[@class=\"listItem4\"]/a");
@@ -193,7 +190,6 @@ public class Randomscenarios extends BaseTest{
 	      click("//*[@id=\"evt5\"]");
 	      WebElement actual_Text=driver.findElement(By.xpath("//*[@id=\"evt5\"]"));
 	      String s=actual_Text.getAttribute("value");
-	      
 	      System.out.println(s);
 	      Assert.assertEquals(newText, s);
 	      waiting();
@@ -203,13 +199,11 @@ public class Randomscenarios extends BaseTest{
 	      click("//*[@id=\"timePickerItem_18\"]");	
 	      waiting();
 	      click("(//input[@name=\"save\"])[1]");
-	      
-	      
 	}
 	
 	@Test
-	public static void blockingCalEventWeekly() throws InterruptedException {
-		
+	public static void blockingCalEventWeekly() throws InterruptedException 
+	{
 		openHome();
 		waiting();
 		String date_xpath = "//span[@class=\"pageDescription\"]/a";
@@ -219,11 +213,9 @@ public class Randomscenarios extends BaseTest{
 		String pagetype = getText("//h1[@class=\"pageType\"]");
 		Assert.assertEquals(pagetype, "Calendar for Rani chiliveri - Day View");
 		scrolldown();
-			
 		click("(//div[@class=\"hourRowLabel timeCellDnD evenHour\"]/a)[16]");
 		waiting();
 		popup();
-		
 		String pageDesc = getText("//h2[@class=\"pageDescription\"]");
 		Assert.assertEquals(pageDesc, "New Event");
 		String oldwindow = driver.getWindowHandle();
@@ -233,7 +225,6 @@ public class Randomscenarios extends BaseTest{
 	      String[] getWindow = wid.toArray(new String[wid.size()]);
 	      //switch to active tab
 	      Thread.sleep(3000);
-
 	      driver.switchTo().window(getWindow[1]);
 	      driver.manage().window().maximize();
 	      String newText=getText("//li[@class=\"listItem4\"]/a");
@@ -244,7 +235,6 @@ public class Randomscenarios extends BaseTest{
 	      click("//*[@id=\"evt5\"]");
 	      WebElement actual_Text=driver.findElement(By.xpath("//*[@id=\"evt5\"]"));
 	      String s=actual_Text.getAttribute("value");
-	      
 	      System.out.println(s);
 	      Assert.assertEquals(newText, s);
 	      waiting();
@@ -256,21 +246,18 @@ public class Randomscenarios extends BaseTest{
 	        Date tommorrow = calendar2.getTime();
 	        // 2/14/2023
 	        DateFormat dateFormat2 = new SimpleDateFormat("MM/dd/yyyy");
-
 	        String tommorrowAsString = dateFormat2.format(tommorrow);
 	        WebElement endDate=driver.findElement(By.xpath("//*[@id=\"EndDateTime\"]"));
             endDate.clear();
 	        endDate.sendKeys(tommorrowAsString);
 	      waiting();
 	      click("//*[@id=\"EndDateTime_time\"]");
-	      
 	      click("//*[@id=\"timePickerItem_18\"]");	
 	      waiting();
 	      scrolldown();
 	      click("//*[@id=\"IsRecurrence\"]");
 	      waiting();
 	      click("//*[@id=\"rectypeftw\"]");
-
 	        Calendar calendar = Calendar.getInstance();
 	        calendar.setTime(new Date());
 	        Date today = calendar.getTime();
@@ -279,11 +266,7 @@ public class Randomscenarios extends BaseTest{
 	        // 2/14/2023
 	        DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
 	        String twoweeksAsString = dateFormat.format(twoweeks);
-
 	      sendKeys("//*[@id=\"RecurrenceEndDateOnly\"]",twoweeksAsString);
 	      click("(//input[@name=\"save\"])[1]");
-	    
 	}
-
-
 }
